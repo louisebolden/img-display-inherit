@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Removing That Little Gap Under an Image in HTML/CSS</title>
+  <meta name="description" content="A very quick and easy way of removing the small space under an image on a webpage, if you need to.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  <style>
+    html {
+      font-family: "PT Mono", monospace;
+      font-size: 15px;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 960px;
+      width: 90%;
+    }
+
+    section {
+      background: rgb(158, 12, 102);
+      color: white;
+      clear: both;
+      font-size: 0.8rem;
+      padding: 1rem;
+    }
+
+    section a,
+    section a:visited {
+      color: white;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    .image-wrap {
+      float: left;
+      width: 50%;
+    }
+
+    img {
+      max-width: 90%;
+    }
+
+    .without-gap img {
+      display: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Removing That Little Gap Under an Image in HTML/CSS</h1>
+    <p>You don't always need to do this. But if you do, here's some good news: it's super easy.</p>
+    <section>
+      <p>
+        <i>This example page was created by
+          <a href="https://twitter.com/lswift01" target="_blank">@lswift01</a>.
+        </i>
+      </p>
+      <p>
+        <i>
+          <a href="" target="_blank">See this code on GitHub &raquo;</a>.
+        </i>
+      </p>
+    </section>
+    <h2>The Magic Code</h2>
+    <p>Simply add the 'display: inherit' property to the images that you want to remove the gap from:</p>
+    <pre><code>
+      img.without-gap {
+        display: inherit;
+      }
+    </code></pre>
+    <h2>The Result</h2>
+    <div class="image-wrap">
+      <h3>Images with gap:</h3>
+      <img src="http://placehold.it/250x250">
+      <img src="http://placehold.it/250x250">
+      <img src="http://placehold.it/250x250">
+    </div>
+    <div class="image-wrap without-gap">
+      <h3>Images without gap:</h3>
+      <img src="http://placehold.it/250x250">
+      <img src="http://placehold.it/250x250">
+      <img src="http://placehold.it/250x250">
+    </div>
+    <section>
+      <p>
+        <i>This example page was created by
+          <a href="https://twitter.com/lswift01" target="_blank">@lswift01</a>.
+        </i>
+      </p>
+      <p>
+        <i>
+          <a href="" target="_blank">See this code on GitHub &raquo;</a>.
+        </i>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
